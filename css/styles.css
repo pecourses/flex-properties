@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  border: 5px solid blue;
+  background-color: aqua;
+  height: 100vh;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.child {
+  border: 5px solid orange;
+  background-color: rgb(251, 218, 186);
+  margin: 5px;
+  width: 200px;
+  /* height: 200px; */
+}
+
+.flexItem1 {
+  align-self: flex-start;
+  order: 1;
+}
+
+.flexItem4 {
+  align-self: flex-start;
+  order: -14;
+}
+
+.flexItem5 {
+  /* margin: auto; */
+  order: -14;
+}
