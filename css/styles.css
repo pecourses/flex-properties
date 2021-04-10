@@ -12,33 +12,44 @@
 
 .flexContainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  /* flex-flow: row wrap; */
   align-content: flex-start;
 }
 
 .child {
   border: 5px solid orange;
   background-color: rgb(251, 218, 186);
-  margin: 5px;
-  width: 200px;
-  /* height: 200px; */
+  margin: 30px;
+  min-width: 280px;
+  max-width: 350px;
+  /* width: 500px; */
+  height: 250px;
+}
+/* w/h -> content*/
+/* content -> flex-basis*/
+
+.flexContainer > div {
+  /* flex-basis: 300px; */
+  /* white-space: nowrap; */
+  /* flex-shrink: 1;
+  flex-grow: 0; */
 }
 
-.flexItem1 {
-  align-self: flex-start;
-  order: 1;
+/* .flexItem1 {
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
-.flexItem4 {
-  align-self: flex-start;
-  order: -14;
+.flexItem2 {
+  flex-shrink: 2;
+  flex-grow: 2;
 }
 
-.flexItem5 {
-  /* margin: auto; */
-  order: -14;
-}
+.flexItem3 {
+  flex-shrink: 3;
+  flex-grow: 3;
+} */
